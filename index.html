@@ -14,6 +14,7 @@ what my someone Abbsolute me, Fricc me, Jack Lenards, strike down, oh no, fricc 
 Inside teedy. On the kangaroo. Say. What. Again. Say what again. Inside teddy. On the knagaroo. Say what again. Say. What. Again. Aaaaa you love 
 Wanna you you been warmer, cowstart street, ooh, gosh darn, aaaa-aaaaa you scyou better warmer, you coustreet,o ooh, gosh darn aaahh. You better warmer. 
 OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, soon, gosh darn, you better warmer, gosh darn, freaking good milkshake.-->
+
 <head>
     <title>PeachMaster</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,7 +23,9 @@ OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, s
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <script id="lescript">
         $(document).ready(function () {
-            console.log("Saultations, traveler. You are the kind of person to look at this stuff, right? No matter.");
+            console.log(
+                "Saultations, traveler. You are the kind of person to look at this stuff, right? No matter."
+                );
             console.log("We are all curious beings.")
             document.getElementById("left").style.width = document.getElementById("left").style.width;
 
@@ -38,7 +41,7 @@ OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, s
                         const element = document.querySelector('#what-he-does');
                         element.innerHTML = element.innerHTML.replace('A',
                             '<span style="background-color: #008cf7; color: white">A</span>'
-                            );
+                        );
                         setTimeout(function () {
                             document.getElementById("vertical-menu")
                                 .children[0].style.visibility = "visible";
@@ -48,7 +51,7 @@ OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, s
                                 .children[2].style.visibility = "visible";
                             document.getElementById("vertical-menu")
                                 .children[3].style.visibility = "visible";
-                    
+
                             asyncWait()
                         }, 200)
 
@@ -62,67 +65,75 @@ OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, s
         });
 
         async function asyncWait() {
-            
-console.log("woo!")
 
-                    await wait(700)
-                var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
-                    "#262626"
-                var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                    "008cf7"
+            console.log("woo!")
+
+            await wait(700)
+            var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
+                "008cf7"
 
 
-                    await wait(750)
-                
-                var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                    "#262626"
-                var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                    "008cf7"
-            
-                    await wait(860)
-                    var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                    "#262626"
-                var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
-                    "008cf7"
+            await wait(750)
 
-                    await wait(600)
+            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
+                "008cf7"
 
-                    var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
-                    "#262626"
-                var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                    "008cf7"
+            await wait(860)
+            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
+                "008cf7"
 
-                    await wait(500)
+            await wait(600)
 
-                    var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                    "#262626"
-                var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                    "008cf7"
-                    await wait(400)
+            var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
+                "008cf7"
 
-var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-"#262626"
-var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
-"008cf7"
-await wait(400)
-document.getElementById("vertical-menu")
-                                .children[0].style.visibility = "hidden";
-                            document.getElementById("vertical-menu")
-                                .children[1].style.visibility = "hidden";
-                            document.getElementById("vertical-menu")
-                                .children[2].style.visibility = "hidden";
-                            document.getElementById("vertical-menu")
-                                .children[3].style.visibility = "hidden";
-document.getElementById("what-he-does").innerHTML = "An Interesting Software Developer"
+            await wait(500)
+
+            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
+                "008cf7"
+            await wait(400)
+
+            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
+                "#262626"
+            var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
+                "008cf7"
+            await wait(400)
+            document.getElementById("vertical-menu")
+                .children[0].style.visibility = "hidden";
+            document.getElementById("vertical-menu")
+                .children[1].style.visibility = "hidden";
+            document.getElementById("vertical-menu")
+                .children[2].style.visibility = "hidden";
+            document.getElementById("vertical-menu")
+                .children[3].style.visibility = "hidden";
+            document.getElementById("what-he-does").innerHTML = "An Interesting Software Developer"
         }
 
         async function wait(ms) {
-  return new Promise(resolve => {
-    setTimeout(resolve, ms);
-  });
-}
+            return new Promise(resolve => {
+                setTimeout(resolve, ms);
+            });
+        }
     </script>
+    <meta property="og:title" content="PeachMaster's Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peachmaster.dev" />
+    <meta property="og:image" content="http://my.site.com/img/cutie.png" />
+    <meta property="og:description" content="Oh, would you look at that. It's Peachy's Website!" />
+    <meta name="theme-color" content="#b40f58">
 
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
@@ -136,7 +147,7 @@ document.getElementById("what-he-does").innerHTML = "An Interesting Software Dev
     <div id="left" class="left">
         <img class="cutie-picture" src="img/cutie.png" width="200" />
 
-        <span class="the-guy" style=" font-family: 'Open Sans', sans-serif; color: white" >PeachMaster<br />
+        <span class="the-guy" style=" font-family: 'Open Sans', sans-serif; color: white">PeachMaster<br />
 
             <span id="what-he-does" class="what-he-does"></span></span>
         <div>
@@ -155,9 +166,11 @@ document.getElementById("what-he-does").innerHTML = "An Interesting Software Dev
     </div>
 
     <div class="links">
-      <a href="https://github.com/KennyPeachKing" style="width:32px;height:32px;"><img src="img/github.png" height="32" width="32"/></a>
-      <b></b>
-      <a href="https://twitter.com/TehPeachMaster" style="width:32px;height:32px;"><img src="img/twitter.png" height="32" width="32"/></a> 
+        <a href="https://github.com/KennyPeachKing" style="width:32px;height:32px;"><img src="img/github.png"
+                height="32" width="32" /></a>
+        <b></b>
+        <a href="https://twitter.com/TehPeachMaster" style="width:32px;height:32px;"><img src="img/twitter.png"
+                height="32" width="32" /></a>
     </div>
 
     <div>
