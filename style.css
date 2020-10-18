@@ -1,0 +1,101 @@
+
+
+html, body {
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("img/kewl.png");
+    background-size: 100% 100% ;
+    background-repeat: no-repeat ;
+  }
+
+.left {
+    margin:0;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(10px);
+    border:5px solid white;
+    border-radius: 10px;
+    margin-right: -10x
+}
+
+.right {
+    margin: 0;
+    padding-left: 60px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 50%;
+     backdrop-filter: blur(10px);
+    border:5px solid white;
+    border-radius: 10px;
+    background-color: #262626;
+}
+
+.bio {
+    font-size: 130%;
+    color: white;
+}
+.links {
+    top: 70%;
+    position: absolute;
+    float: right;
+    right: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+  .left cutie-picture {
+    border-radius: 50%;
+  }
+
+  .vertical-menu {
+      width : 200px;
+  }
+
+  .vertical-menu a {
+      background-color: #262626;
+      color: white;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      position: relative;
+      top: 470px;
+      left: 227px;
+      z-index: 5;
+      visibility: hidden;
+  }
+  .the-guy {
+      text-align: left;
+      font-size: 300%;
+      position: relative;
+      top: 50px;
+      left: 6px;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .what-he-does {
+    text-align: left;
+    font-size: 24px;
+    top: 40px;
+    left: -245px;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+  .cutie-picture {
+    border-radius: 50%;
+    top: 10px;
+    vertical-align: middle;
+  }
+
+  .bio {
+    font-family: 'Open Sans', sans-serif;
+  }
+
