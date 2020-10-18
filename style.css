@@ -6,7 +6,8 @@ html, body {
     margin: 0px;
     padding: 0px;
     background-image: url("img/kewl.png");
-    background-size: 100% 100% ;
+    background-size: 100% ;
+    background-size:cover;
     background-repeat: no-repeat ;
   }
 
@@ -66,7 +67,7 @@ html, body {
       padding: 12px;
       text-decoration: none;
       position: relative;
-      top: 470px;
+      top: 500px;
       left: 227px;
       z-index: 5;
       visibility: hidden;
