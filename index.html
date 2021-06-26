@@ -1,181 +1,66 @@
+<!DOCTYPE html>
 <html>
-<!-- Pssh, don't worry about the spegegi code -->
-<!-- Hey Kids. Mmm. Mhm! This is a tasty burger! Burger, burger burger! Ahhh. Say what again! 
-Say. What. Again! Say what again! Motherfricker. Say say say what again! A bench! Say what again! Say. What.
-Again! Say what again! mm.. Say say what again! 25. Shoot. Strike down oh no, want that locknoze treet, yeah, two man. 25
-shoot. Strike down god damn pathe. You're smart mother fricker! This sounds like something you actually want to say. Fricck me, Jack Lenards, 
-  Strike Down. <something here> Oh fricc me! Do you, ask, im flip freaking master. Fricc me! Jack Lenards, strike down, door ooh, fricc me!
-Do you, ask, freaking good milkshake. Good and what that mmm! Good day want them bunch of fricks, mm, mm, mm.Good. Good. Good. 
-Good ask gosh dan panth cam. Can want that bunch of fricks, mm, god dang pather, good, good, good. 
-Youuu little wannna, so, gosh darn, you little wamer, ga god god darn, you little warmer, soo, gosh, darn, you little wamer, 
-Gosh darn. Let's go. Say what again! Say. What. Again! Say say boop eepep booo bepbepp Say what again! 
-Say. What. Again. Say what again. Mmm mm.. Uhh, uh, freaking good milk shake. Fricc me, Jack Lenards, strike down, on no, fricc me, do you
-what my someone Abbsolute me, Fricc me, Jack Lenards, strike down, oh no, fricc me, do you great inventions and furious anger. Say. What. Again!
-Inside teedy. On the kangaroo. Say. What. Again. Say what again. Inside teddy. On the knagaroo. Say what again. Say. What. Again. Aaaaa you love 
-Wanna you you been warmer, cowstart street, ooh, gosh darn, aaaa-aaaaa you scyou better warmer, you coustreet,o ooh, gosh darn aaahh. You better warmer. 
-OOooh, gosh darn, you better warmer, gosh o gosh gosh darn, you better warmer, soon, gosh darn, you better warmer, gosh darn, freaking good milkshake.-->
 
 <head>
-    <title>PeachMaster</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <script id="lescript">
-        $(document).ready(function () {
-            console.log(
-                "Saultations, traveler. You are the kind of person to look at this stuff, right? No matter."
-                );
-            console.log("We are all curious beings.")
-            document.getElementById("left").style.width = document.getElementById("left").style.width;
-
-
-            new TypeIt("#what-he-does", {
-                speed: 100,
-            }).type("A Software Developer").exec(async () => {
-                //-- Return a promise that resolves after something happens.
-                await new Promise((resolve, reject) => {
-                    setTimeout(function () {
-                        //document.getElementById("what-he-does").style.backgroundColor = "#008cf7"
-                        //document.getElementById("what-he-does").style.color = "white"
-                        const element = document.querySelector('#what-he-does');
-                        element.innerHTML = element.innerHTML.replace('A',
-                            '<span style="background-color: #008cf7; color: white">A</span>'
-                        );
-                        setTimeout(function () {
-                            document.getElementById("vertical-menu")
-                                .children[0].style.visibility = "visible";
-                            document.getElementById("vertical-menu")
-                                .children[1].style.visibility = "visible";
-                            document.getElementById("vertical-menu")
-                                .children[2].style.visibility = "visible";
-                            document.getElementById("vertical-menu")
-                                .children[3].style.visibility = "visible";
-
-                            asyncWait()
-                        }, 200)
-
-                    }, 1000)
-
-                    var theDiv = document.getElementById("vertical-menu").children[0].style
-                        .backgroundColor = "008cf7"
-                });
-            }).go();
-
-        });
-
-        async function asyncWait() {
-
-            console.log("woo!")
-
-            await wait(700)
-            var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                "008cf7"
-
-
-            await wait(750)
-
-            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                "008cf7"
-
-            await wait(860)
-            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
-                "008cf7"
-
-            await wait(600)
-
-            var theDiv = document.getElementById("vertical-menu").children[3].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                "008cf7"
-
-            await wait(500)
-
-            var theDiv = document.getElementById("vertical-menu").children[2].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                "008cf7"
-            await wait(400)
-
-            var theDiv = document.getElementById("vertical-menu").children[1].style.backgroundColor =
-                "#262626"
-            var theDiv = document.getElementById("vertical-menu").children[0].style.backgroundColor =
-                "008cf7"
-            await wait(400)
-            document.getElementById("vertical-menu")
-                .children[0].style.visibility = "hidden";
-            document.getElementById("vertical-menu")
-                .children[1].style.visibility = "hidden";
-            document.getElementById("vertical-menu")
-                .children[2].style.visibility = "hidden";
-            document.getElementById("vertical-menu")
-                .children[3].style.visibility = "hidden";
-            document.getElementById("what-he-does").innerHTML = "An Interesting Software Developer"
-        }
-
-        async function wait(ms) {
-            return new Promise(resolve => {
-                setTimeout(resolve, ms);
-            });
-        }
-    </script>
-    <meta property="og:title" content="PeachMaster's Personal Website" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2965d34f8e.js" crossorigin="anonymous"></script>
+    <meta property="og:title" content="FloofyPeachy" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://peachmaster.dev" />
-    <meta property="og:image" content="http://peachmaster.dev/img/cutie.png" />
+    <meta property="og:image" content="http://peachmaster.dev/dog1.png" />
     <meta property="og:description" content="Oh, would you look at that. It's Peachy's Website!" />
-    <meta name="theme-color" content="#b40f58">
-
+    <meta name="theme-color" content="#bca4d3">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Include this to make the og:image larger -->
     <meta name="twitter:card" content="summary_large_image">
+    <title>Peachy</title>
+    <script type="text/javascript">
+        function randomIntFromInterval(min, max) { // min and max included 
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        function startup() {
+            var elem = document.getElementById("doggo");
+            elem.src = randomIntFromInterval(0, 1) == 1 ? "dog1.png" : "dog2.png"
+        }
+        window.onload = startup;
+    </script>
 </head>
 
-<body>
-    <div id="vertical-menu" class="vertical-menu">
-        <a style=" font-family: 'Open Sans', sans-serif; color: white">An Interesting </a>
-        <a style=" font-family: 'Open Sans', sans-serif; color: white">A Bruh Moment</a>
-        <a style=" font-family: 'Open Sans', sans-serif; color: white">A Strange</a>
-        <a style=" font-family: 'Open Sans', sans-serif; color: white">A Sus</a>
+<body class="lebody">
+
+    <div class="bg">
+
     </div>
-    <div id="blurleft" class="blurleft"></div>
-    <div id="left" class="left">
-        <img class="cutie-picture" src="img/cutie.png" width="200" />
 
-        <span class="the-guy" style=" font-family: 'Open Sans', sans-serif; color: white">PeachMaster<br />
+    <div class="container" style="display:flex; position:absolute; top:0; bottom:0; right:0; left:0;  flex-direction: column; align-items: center;">
+        <div class="profile" style="width: 50vh;  max-width: 50%; ">
+            <div class="dogntext" style="display: flex; flex-direction: column; align-items: center;">
+                <img id="doggo" style=" width:180px; border-radius: 50%; ">
+                <span style="font-size: calc(30px + 1vw); line-height: calc(1.1em + 0.5vw); font-family: 'Titillium Web', serif ">
+                Peachy
+            </span>
+                <span style="font-size: calc(14px + 1vw); line-height: calc(1.1em + 0.5vw); font-family: 'Titillium Web', serif; white-space:nowrap; ">
+                floofy husky software developer</span>
+                <a class="artist " href="https://www.furaffinity.net/gallery/kttsunne/ " style="text-decoration: none; "> <i class="fas fa-paw " style="vertical-align: middle; margin: 10px; font-size: calc(12px + 1vw); line-height: calc(1.1em + 0.5vw); "></i>profile artist</a>
 
-            <span id="what-he-does" class="what-he-does"></span></span>
-        <div>
-
+            </div>
+            <div class="details " style="display: flex; flex-direction: column; align-items: center; ">
+                <div class="socials ">
+                    <button class="btn-t " onclick="window.location.href='https://twitter.com/TehPeachMaster' ; "><i class="fab fa-twitter " ></i> Twitter</button>
+                    <button class="btn-g " onclick="window.location.href='https://github.com/KennyPeachKing' ; "><i class="fab fa-github "></i> GitHub</button>
+                    <button class="btn-m " onclick="window.location.href='mailto:peachy@peachmaster.dev' ; "><i class="fas fa-envelope "></i> Mail</button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="right">
-        <p class="bio"> I am a person who likes to do things related to computers. <br />
-            Some things may seem cool to you. You can check those out on my GitHub page. <br />
-            I have been into computer science for over 5 years, and I have developed many pieces of software. <br />
-            It's just what I do!
-        </p>
-
-        <p></p>
-    </div>
-
-    <div class="links">
-        <a href="https://github.com/KennyPeachKing" style="width:32px;height:32px;"><img src="img/github.png"
-                height="32" width="32" /></a>
-        <b></b>
-        <a href="https://twitter.com/TehPeachMaster" style="width:32px;height:32px;"><img src="img/twitter.png"
-                height="32" width="32" /></a>
-    </div>
-
-    <div>
 
     </div>
+
+
 </body>
 
 </html>
